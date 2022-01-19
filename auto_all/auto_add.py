@@ -53,7 +53,7 @@ def find_position(filename: str) -> int:
     return position + 1
 
 
-def run(filename):
+def run(filename: str):
     names = generate(filename)
     text = format(names)
     line_num = find_position(filename)
