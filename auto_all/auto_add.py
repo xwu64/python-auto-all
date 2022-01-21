@@ -13,7 +13,6 @@ def is_exist(filename: str) -> bool:
         for body in tree.body:
             if isinstance(body, ast.Assign):
                 for var in body.targets:
-                    print(var.__dict__)
                     if isinstance(var, ast.Name) and var.id == "__all__":
                         # assign with one variable
                         return True
